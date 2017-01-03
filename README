@@ -9,5 +9,5 @@ This layer depends on:
 
 URI: https://github.com/UBIQCONN/meta-boot2qt.git
 branch: krogoth
-revision: TBD
+revision: a5977e6a6e5ac6efaea89134456b01263ae3276f
 
