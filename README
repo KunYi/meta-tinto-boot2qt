@@ -9,5 +9,33 @@ This layer depends on:
 
 URI: https://github.com/UBIQCONN/meta-boot2qt.git
 branch: krogoth
-revision: a5977e6a6e5ac6efaea89134456b01263ae3276f
+revision: d7fff016e033406500079f9a5ab224adcd758e7f
+
+
+#########################################################################################
+# How to use this layer
+#########################################################################################
+1. first to clone meta-boot2qt layer
+
+   git clone https://github.com/UBIQCONN/meta-boot2qt.git
+   cd meta-boot2qt
+   git checkout d7fff016e033406500079f9a5ab224adcd758e7f
+
+2. prepare repo and manifests
+
+   b2qt-init-build-env init --device imx6dltinto
+
+3. prepare build enviroments
+
+   export MACHINE=imx6dltinto
+   source ./setup-environment.sh
+
+4. run bitbake to ingition build process
+
+   bitbake b2qt-embedded-qt5-image # build device image
+   or
+   bitbake meta-toolchain-b2qt-embedded-qt5-sdk # build toolchain & sdk
+
+ref.
+  http://doc.qt.io/QtForDeviceCreation/qtee-custom-embedded-linux-image.html
 
