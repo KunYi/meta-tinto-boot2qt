@@ -1,0 +1,13 @@
+
+#########################################################################################
+# OpenEmbedded/Yocto meta layer for TintoBoard on Boot2Qt testing
+#########################################################################################
+
+This layer provide Tinto Board on Boot to Qt embedded linux recipes.
+
+This layer depends on:
+
+URI: https://github.com/UBIQCONN/meta-boot2qt.git
+branch: krogoth
+revision: TBD
+
